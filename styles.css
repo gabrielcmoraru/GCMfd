@@ -4,6 +4,16 @@
 	box-sizing: border-box;
 }
 
+header {
+	background: #ffffff;
+	width: 100%;
+	height: 90px;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
 footer {
 	background-color: green;
 	padding: 5px;
@@ -13,54 +23,56 @@ footer {
 	display: block;
 }
 
-h1,h2 {
-	color: white;
-	text-align: center;
-	padding: 2px;
+nav {
+	float: right;
+	padding: 20px;
 }
 
-a {
-	color: white;
-	text-decoration: none;
+ul {
+	list-style: none;
 }
 
 li {
 	display: inline-block;
-	display: inline;
 	float: left;
-	padding-right: 5px;
-}
-
-ul {
-	background-color: #F2C777;
-}
-
-li a {
-	display: block;
 	padding: 10px;
-	color: white;
- }
+}
 
-li a:hover {
-	background-color: #EC8C65;
+.list-item {
+	width: 2em;
+
+}
+
+.logo {
+	margin: 7px 0 7px 0 ;
+	padding: 0 ;
+	width: 300px;
+}
+
+.menu-icon{
+	display: hidden;
+	width: 38px;
+	height: 38px;
+	background: url(images/bars.svg) no-repeat center;
 }
 
 .picture {
-  height: auto;
-  justify-content: inherit;
-  align-items: inherit;
-  display: block;
-  overflow: hidden;
+	height: auto;
+	max-width: 959px;
+	justify-content: inherit;
+	align-items: inherit;
+	display: block;
+	overflow: hidden;
 }
 
 .photo img {
-  width: 100%;
-  display: block;
+	width: 100% ;
+	display: block ;
 }
 
 .illustration img {
-  width: 100%;
-  display: block;
+	width: 100%;
+	display: block;
 }
 
 .page{
@@ -68,7 +80,7 @@ li a:hover {
 	flex-wrap: wrap;
 }
 
-.section{
+.section {
 	width: 100%;
 	height: 300px;
 	display: flex;
@@ -76,16 +88,7 @@ li a:hover {
 	align-items: center;
 }
 
-.menu{
-	background-color: #5995DA;
-	height: 110px;
-}
-
-.header{
-	background-color: #B2D6FF;
-}
-
-.content{
+.content {
 	background-color: #EAEDF0;
 	height: 600px;
 }
@@ -109,9 +112,17 @@ li a:hover {
 
 /* Mobile */
 @media only screen and (max-width: 400px) {
-	body {
-		background-color: #F09A9D;
+	.logo{
+	margin: 7px 0 7px 0 ;
+	padding: 0 ;
+	width: 240px;
 	}
+	header{
+	height: 70px;
+	}
+	nav{
+	padding:  15px 10px 0 0 ;
+		}
 }
 
 /* Tablet */
@@ -121,6 +132,9 @@ li a:hover {
 	.feature-3,
 	.feature-4 {
 	width: 50%;
+	}
+	header{
+		height: 80px;
 	}
 	footer{
 		height: 50px;
@@ -132,25 +146,66 @@ li a:hover {
 	.page {
 		width: 960px;
 		margin: 0 auto;
-	}
+		}
 	.feature-1,
 	.feature-2,
 	.feature-3 {
 		width: 33.3%;
-	}
+		}
 	.header {
 		height: 400px;
-	}
+		}
 	.feature-4 {
 		height: 200px;
 		order: 1;
-	}
+		}
 	.content {
 		order: 2;
-	}
+		}
 	footer{
 		height: 100px;
 		order: 3;
 	}
+}
+
+@media only screen and (max-width : 641px) {
+
+header {
+
+	position: sticky;
+
+}
+.menu-icon {
+
+	display:inline-block;
+
+}
+.menu-icon:hover {
+	background-color: pink;
+}
+nav ul, nav:active ul {
+
+	display: none;
+	position: absolute;
+	padding: 20px;
+	background: #fff;
+	border: 5px solid #444;
+	right: 10px;
+	top: 60px;
+	width: 30%;
+	border-radius: 4px 0 4px 4px;
+
+}
+
+nav li {
+	text-align: center;
+	width: 100%;
+	padding: 10px 0;
+	margin: 0;
+}
+
+nav:hover ul {
+	padding: 0;
+	display: block;
 }
 
