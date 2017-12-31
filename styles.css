@@ -56,10 +56,13 @@ h1,h2{
 	font-family: Verdana, Geneva, sans-serif;
 }
 
+.seo:hover, .ecommerce:hover, .website:hover {
+	background-color: #555;
+	color: white;
+	}
 
 .list-item {
 	width: 2em;
-
 }
 
 .logo {
@@ -72,7 +75,7 @@ h1,h2{
 	display: hidden;
 	width: 38px;
 	height: 38px;
-	background: url(images/bars.svg) no-repeat center;
+	background: url(images/bars.svg) center no-repeat;
 }
 
 .picture {
@@ -150,8 +153,6 @@ h1,h2{
 	}
 	header{
 	height: 70px;
-	border: 2px black;
-	border-style: hidden solid solid hidden ;
 	}
 	nav{
 	padding:  15px 10px 0 0 ;
@@ -206,30 +207,30 @@ h1,h2{
 
 @media only screen and (max-width : 641px) {
 
-header {
+/* header {
 
 	position: sticky;
 
-}
+} */
 .menu-icon {
 
 	display:inline-block;
 
 }
 .menu-icon:hover {
-	background-color: pink;
+	background-color: #1bb0b9;
 }
 nav ul, nav:active ul {
 
 	display: none;
 	position: absolute;
-	padding: 20px;
+	padding: 10px;
 	background: #fff;
 	border: 5px solid #444;
 	right: 10px;
 	top: 60px;
 	width: 30%;
-	border-radius: 4px 0 4px 4px;
+	border-radius: 8px 0 8px 8px;
 
 }
 
