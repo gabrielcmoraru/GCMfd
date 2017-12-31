@@ -21,6 +21,7 @@ footer {
 	width: 100%;
 	text-align: center;
 	display: block;
+	margin-top: 5px;
 }
 
 nav {
@@ -37,6 +38,24 @@ li {
 	float: left;
 	padding: 10px;
 }
+
+article{
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+article img {
+	width: 5em;
+}
+
+h1,h2{
+	font-family: Verdana, Geneva, sans-serif;
+}
+
 
 .list-item {
 	width: 2em;
@@ -59,6 +78,7 @@ li {
 .picture {
 	height: auto;
 	max-width: 959px;
+	height: 300px;
 	justify-content: inherit;
 	align-items: inherit;
 	display: block;
@@ -70,9 +90,12 @@ li {
 	display: block ;
 }
 
-.illustration img {
-	width: 100%;
-	display: block;
+.bio img{
+	width: 130px;
+	height: 200px;
+	border-radius: 120px;
+	display: inline;
+	margin: 20px;
 }
 
 .page{
@@ -82,43 +105,52 @@ li {
 
 .section {
 	width: 100%;
-	height: 300px;
+	height: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: auto;
+	margin-top: 5px;
 }
 
-.content {
-	background-color: #EAEDF0;
-	height: 600px;
+.bio {
+	border: 5px solid #bdbdbd;
+	height: auto;
 }
 
-.feature-4 {
-	background-color: #D6E9FE;
+.website {
+	border: 5px #e65100;
+	border-style: solid hidden solid solid;
 }
 
-.feature-1 {
-	background-color: #F5CF8E;
+.ecommerce {
+	border: 5px #7cb342;
+	border-style: solid hidden solid hidden;
 }
 
-.feature-2 {
-	background-color: #F09A9D;
-}
-
-.feature-3 {
-	background-color: #C8C6FA;
+.seo {
+	border: 5px #00bcd4;
+	border-style: solid solid solid hidden;
 }
 
 
 /* Mobile */
 @media only screen and (max-width: 400px) {
+	.website,
+	.ecommerce,
+	.seo{
+		border-style: solid;
+		margin-top: 5px;
+	}
 	.logo{
 	margin: 7px 0 7px 0 ;
 	padding: 0 ;
-	width: 240px;
+	width: 220px;
 	}
 	header{
 	height: 70px;
+	border: 2px black;
+	border-style: hidden solid solid hidden ;
 	}
 	nav{
 	padding:  15px 10px 0 0 ;
@@ -127,11 +159,21 @@ li {
 
 /* Tablet */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-	.feature-1,
-	.feature-2,
-	.feature-3,
-	.feature-4 {
-	width: 50%;
+	.website,
+	.ecommerce {
+		width: 50%;
+	}
+	.seo {
+		width: 100%;
+	}
+	.website{
+		border-style: solid hidden solid solid;
+	}.ecommerce{
+		border-style: solid solid solid hidden;
+	}
+	.seo{
+		border-style: solid;
+		margin-top: 5px;
 	}
 	header{
 		height: 80px;
@@ -147,19 +189,15 @@ li {
 		width: 960px;
 		margin: 0 auto;
 		}
-	.feature-1,
-	.feature-2,
-	.feature-3 {
+	.website,
+	.ecommerce,
+	.seo {
 		width: 33.3%;
 		}
 	.header {
 		height: 400px;
 		}
-	.feature-4 {
-		height: 200px;
-		order: 1;
-		}
-	.content {
+	.bio {
 		order: 2;
 		}
 	footer{
