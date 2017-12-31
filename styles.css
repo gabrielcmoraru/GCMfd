@@ -76,7 +76,6 @@ h1,h2{
 }
 
 .picture {
-	height: auto;
 	max-width: 959px;
 	height: 300px;
 	justify-content: inherit;
@@ -163,9 +162,6 @@ h1,h2{
 	.ecommerce {
 		width: 50%;
 	}
-	.seo {
-		width: 100%;
-	}
 	.website{
 		border-style: solid hidden solid solid;
 	}.ecommerce{
@@ -247,3 +243,4 @@ nav:hover ul {
 	display: block;
 }
 
+}
