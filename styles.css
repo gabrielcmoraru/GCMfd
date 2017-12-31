@@ -139,7 +139,10 @@ h1,h2{
 	.ecommerce,
 	.seo{
 		border-style: solid;
-		margin-top: 5px;
+		margin: 5px;
+	}
+	.bio, .picture{
+		margin:  5px;
 	}
 	.logo{
 	margin: 7px 0 7px 0 ;
