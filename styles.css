@@ -42,7 +42,7 @@ article{
 display: inline-block;
 text-align: center;
 padding: 10px;
-font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 font-size: 16px;
 font-weight: bold;
 }
@@ -141,7 +141,7 @@ flex-wrap: wrap;
 display: inline-block;
 text-align: center;
 padding: 10px;
-font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 font-size: 16px;
 font-weight: bold;
 }
