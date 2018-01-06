@@ -1,249 +1,378 @@
 *{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 header {
-	background: #ffffff;
-	width: 100%;
-	height: 90px;
-	position: relative;
-	top: 0;
-	left: 0;
-	z-index: 1;
+background: #ffffff;
+width: 100%;
+height: 90px;
+position: relative;
+top: 0;
+left: 0;
+z-index: 1;
 }
 
 footer {
-	background-color: green;
-	padding: 5px;
-	opacity: 0.80;
-	width: 100%;
-	text-align: center;
-	display: block;
-	margin-top: 5px;
+background-color: #7F7F7F;
+padding: 5px;
+opacity: 0.90;
+width: 100%;
+text-align: center;
+display: block;
+margin-top: 5px;
 }
 
 nav {
-	float: right;
-	padding: 20px;
+float: right;
+padding: 20px;
 }
 
 ul {
-	list-style: none;
+list-style: none;
 }
 
 li {
-	display: inline-block;
-	float: left;
-	padding: 10px;
+display: inline-block;
+padding: 10px;
 }
 
 article{
-	display: inline-block;
-	text-align: center;
-	padding: 10px;
-	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 16px;
-	font-weight: bold;
+display: inline-block;
+text-align: center;
+padding: 10px;
+font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+font-size: 16px;
+font-weight: bold;
 }
 
 article img {
-	width: 5em;
+width: 5em;
 }
 
 h1,h2{
-	font-family: Verdana, Geneva, sans-serif;
+font-family: Verdana, Geneva, sans-serif;
+}
+h3{
+font-family: Verdana, Geneva, sans-serif;
+font-size: 1em;
+padding: 5px;
+color: white;
 }
 
 .seo:hover, .ecommerce:hover, .website:hover {
-	background-color: #555;
-	color: white;
-	}
+background-color: #555;
+transition-duration: 0.4s;
+color: white;
+}
 
 .list-item {
-	width: 2em;
+width: 2em;
+}
+
+.skill {
+width: 4em;
+}
+
+.skills {
+display: inline-block;
+text-align: center;
+}
+
+.skillsCode {
+width: 1em;
 }
 
 .logo {
-	margin: 7px 0 7px 0 ;
-	padding: 0 ;
-	width: 300px;
+margin: 7px 0 7px 0 ;
+padding: 0 ;
+width: 300px;
 }
 
 .menu-icon{
-	display: hidden;
-	width: 38px;
-	height: 38px;
-	background: url(images/bars.svg) center no-repeat;
+display: hidden;
+width: 38px;
+height: 38px;
+background: url(images/bars.svg) center no-repeat;
 }
 
 .picture {
-	max-width: 959px;
-	height: 300px;
-	justify-content: inherit;
-	align-items: inherit;
-	display: block;
-	overflow: hidden;
+max-width: 959px;
+height: 300px;
+justify-content: inherit;
+align-items: inherit;
+display: block;
+overflow: hidden;
 }
 
 .photo img {
-	width: 100% ;
-	display: block ;
+width: 100% ;
+display: block ;
 }
 
-.bio img{
-	width: 130px;
-	height: 200px;
-	border-radius: 120px;
-	display: inline;
-	margin: 20px;
+.profilePic {
+width: 130px;
+height: 200px;
+border-radius: 120px;
+display: inline-block;
+margin: 20px;
 }
 
 .page{
-	display: flex;
-	flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 }
 
 .section {
-	width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: auto;
-	margin-top: 5px;
+width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: auto;
+margin-top: 5px;
 }
 
 .bio {
-	border: 5px solid #bdbdbd;
-	height: auto;
+border: 5px solid #7F7F7F;
+height: auto;
+flex-wrap: wrap;
+display: inline-block;
+text-align: center;
+padding: 10px;
+font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+font-size: 16px;
+font-weight: bold;
 }
 
 .website {
-	border: 5px #e65100;
-	border-style: solid hidden solid solid;
+border: 5px #e65100;
+border-style: solid hidden solid solid;
 }
 
 .ecommerce {
-	border: 5px #7cb342;
-	border-style: solid hidden solid hidden;
+border: 5px #7cb342;
+border-style: solid hidden solid hidden;
 }
 
 .seo {
-	border: 5px #00bcd4;
-	border-style: solid solid solid hidden;
+border: 5px #00bcd4;
+border-style: solid solid solid hidden;
+}
+
+.contact{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.email {
+flex: 1;
+width: 50%;
+}
+
+.email input, textarea, button {
+margin: 5px;
+padding: 3px;
+}
+
+.email button {
+position: relative;
+background-color: white;
+border: none;
+color: black;
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+font-weight: bold;
+margin: 4px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius: 15px;
+}
+
+.email button:hover {
+background-color: #555;
+color: white;
+border: 1px solid white;
+}
+
+.socialMedia {
+width: 50%;
+padding: 10px;
+margin: 10px;
+}
+
+.socialMedia img{
+width: 3em;
+}
+
+small {
+text-align: center;
+display: block;
+margin: 0;
+color: white;
 }
 
 /* Mobile */
 @media only screen and (max-width: 400px) {
-	.website,
-	.ecommerce,
-	.seo{
-		border-style: solid;
-		margin: 5px;
-	}
-	.bio, .picture{
-		margin:  5px;
-	}
-	.logo{
-	margin: 7px 0 7px 0 ;
-	padding: 0 ;
-	width: 220px;
-	}
-	header{
-	height: 70px;
-	}
-	nav{
-	padding:  15px 10px 0 0 ;
-		}
+.website,
+.ecommerce,
+.seo {
+border-style: solid;
+margin: 5px;
+background-color: #555;
+color: white;
+}
+.bio, .picture {
+margin:  5px;
+}
+.logo {
+margin: 7px 0 7px 0 ;
+padding: 0 ;
+width: 220px;
+}
+.email {
+width: 100%;
+}
+.email input{
+width: 90%;
+height: 25px;
+}
+.email textarea{
+width: 90%;
+height: 225px;
+}
+.socialMedia{
+width: 100%;
+}
+.contact{
+flex-direction: column;
+}
+header {
+height: 70px;
+}
+nav {
+padding:  15px 10px 0 0 ;
+}
 }
 
 /* Tablet */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-	.website,
-	.ecommerce {
-		width: 50%;
-	}
-	.website{
-		border-style: solid hidden solid solid;
-	}.ecommerce{
-		border-style: solid solid solid hidden;
-	}
-	.seo{
-		border-style: solid;
-		margin-top: 5px;
-	}
-	header{
-		height: 80px;
-	}
-	footer{
-		height: 50px;
-	}
+.website,
+.ecommerce {
+width: 50%;
+}
+.website{
+border-style: solid hidden solid solid;
+}.ecommerce{
+border-style: solid solid solid hidden;
+}
+.seo{
+border-style: solid;
+margin-top: 5px;
+}
+.email input{
+width: 100%;
+height: 25px;
+}
+.email textarea{
+width: 100%;
+height: 175px;
+}
+header{
+height: 80px;
+}
+footer{
+height: auto;
+}
 }
 
 /* Desktop */
 @media only screen and (min-width: 961px){
-	.page {
-		width: 960px;
-		margin: 0 auto;
-		}
-	.website,
-	.ecommerce,
-	.seo {
-		width: 33.3%;
-		}
-	.header {
-		height: 400px;
-		}
-	.bio {
-		order: 2;
-		}
-	footer{
-		height: 100px;
-		order: 3;
-	}
+.page {
+width: 960px;
+margin: 0 auto;
+}
+.website,
+.ecommerce,
+.seo {
+width: 33.3%;
+}
+.header {
+height: 400px;
+}
+.bio {
+order: 2;
+}
+.profilePic{
+float: left;
+}
+.email input{
+width: 100%;
+height: 25px;
+}
+.email textarea{
+width: 100%;
+height: 125px;
+}
+footer{
+height: auto;
+order: 3;
+}
 }
 
+/* Navigation bar + footer */
 @media only screen and (max-width : 641px) {
 
-/* header {
-
-	position: sticky;
-
-} */
 .menu-icon {
-
-	display:inline-block;
-
+display:inline-block;
 }
+
 .menu-icon:hover {
-	background-color: #1bb0b9;
-}
-nav ul, nav:active ul {
-
-	display: none;
-	position: absolute;
-	padding: 10px;
-	background: #fff;
-	border: 5px solid #444;
-	right: 10px;
-	top: 60px;
-	width: 30%;
-	border-radius: 8px 0 8px 8px;
-
+background-color: #888;
 }
 
-nav li {
-	text-align: center;
-	width: 100%;
-	padding: 10px 0;
-	margin: 0;
+.navbar ul, .navbar:active ul {
+display: none;
+position: absolute;
+padding: 10px;
+background: #fff;
+border: 5px solid #444;
+right: 10px;
+top: 60px;
+width: 30%;
+border-radius: 8px 0 8px 8px;
 }
 
-nav:hover ul {
-	padding: 0;
-	display: block;
+.navbar li {
+text-align: center;
+width: 100%;
+padding: 10px 0;
+margin: 0;
+}
+
+.navbar:hover ul {
+padding: 0;
+display: block;
+}
+
+.email {
+width: 100%;
+}
+.email input{
+width: 90%;
+height: 25px;
+}
+.email textarea{
+width: 90%;
+height: 225px;
+}
+.socialMedia{
+width: 100%;
 }
 
 }
