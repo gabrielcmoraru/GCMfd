@@ -42,7 +42,7 @@ article{
 display: inline-block;
 text-align: center;
 padding: 10px;
-font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-family:'Kanit', sans-serif;
 font-size: 16px;
 font-weight: bold;
 }
@@ -52,10 +52,10 @@ width: 5em;
 }
 
 h1,h2{
-font-family: Verdana, Geneva, sans-serif;
+font-family: 'Exo 2', sans-serif;
 }
 h3{
-font-family: Verdana, Geneva, sans-serif;
+font-family: 'Exo 2', sans-serif;
 font-size: 1em;
 padding: 5px;
 color: white;
@@ -134,7 +134,7 @@ flex-wrap: wrap;
 display: inline-block;
 text-align: center;
 padding: 10px;
-font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-family:'Kanit', sans-serif;
 font-size: 16px;
 font-weight: bold;
 }
@@ -167,7 +167,7 @@ width: 50%;
 
 .email input, textarea, button {
 margin: 5px;
-padding: 3px;
+padding: 5px;
 }
 
 .email button {
@@ -228,9 +228,9 @@ margin: 7px 0 7px 0 ;
 padding: 0 ;
 width: 220px;
 }
-.email {
+/* .email {
 width: 100%;
-}
+} */
 .email input{
 width: 90%;
 height: 25px;
@@ -238,6 +238,7 @@ height: 25px;
 .email textarea{
 width: 90%;
 height: 225px;
+overflow-x: hidden;
 }
 .socialMedia{
 width: 100%;
