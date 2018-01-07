@@ -63,7 +63,8 @@ color: white;
 
 .seo:hover, .ecommerce:hover, .website:hover {
 background-color: #555;
-transition-duration: 0.4s;
+transition-duration: 0.6s;
+transform: rotate(360deg);
 color: white;
 }
 
@@ -71,8 +72,18 @@ color: white;
 width: 2em;
 }
 
+.list-item:hover {
+transition:  0.5s ease-in-out;
+transform: rotate(360deg) scale(1.5,1.5);
+}
+
 .skill {
 width: 4em;
+}
+
+.skill:hover {
+transition: 0.5s;
+transform: rotate3d(45, 180, 90, 360deg);
 }
 
 .skills {
@@ -203,6 +214,12 @@ margin: 10px;
 width: 3em;
 }
 
+.socialMedia img:hover{
+opacity: 0.7;
+transition: all 0.5s ease-in-out;
+transform: rotate(360deg);
+}
+
 small {
 text-align: center;
 display: block;
@@ -228,9 +245,6 @@ margin: 7px 0 7px 0 ;
 padding: 0 ;
 width: 220px;
 }
-/* .email {
-width: 100%;
-} */
 .email input{
 width: 90%;
 height: 25px;
