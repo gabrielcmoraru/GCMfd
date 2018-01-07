@@ -283,6 +283,9 @@ border-style: solid solid solid hidden;
 border-style: solid;
 margin-top: 5px;
 }
+.seo:hover{
+transform: rotateX(360deg)
+}
 .email input{
 width: 100%;
 height: 25px;
