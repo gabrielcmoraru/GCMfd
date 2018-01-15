@@ -63,8 +63,7 @@ color: white;
 
 .seo:hover, .ecommerce:hover, .website:hover {
 background-color: #555;
-transition-duration: 0.8s;
-transform: rotate(360deg);
+transition-duration: 0.5s;
 color: white;
 }
 
@@ -293,9 +292,6 @@ border-style: solid solid solid hidden;
 .seo{
 border-style: solid;
 margin-top: 5px;
-}
-.seo:hover{
-transform: rotateX(360deg)
 }
 .email input{
 width: 100%;
