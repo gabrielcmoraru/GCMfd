@@ -70,11 +70,13 @@ color: white;
 
 .list-item {
 width: 2em;
+opacity: 0.8;
 }
 
 .list-item:hover {
-transition:  0.5s ease-in-out;
+transition:  0.5s  ease-in-out;
 transform: rotate(360deg) scale(1.5,1.5);
+opacity: 1;
 }
 
 .skill {
@@ -213,9 +215,18 @@ margin: 10px;
 .socialMedia img{
 width: 3em;
 }
+.fadeOut {
+opacity: 0.6;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+}
+
+.fadeOut:hover {
+opacity: 1;
+}
 
 .socialMedia img:hover{
-opacity: 0.7;
 transition: all 0.5s ease-in-out;
 transform: rotate(360deg);
 }
